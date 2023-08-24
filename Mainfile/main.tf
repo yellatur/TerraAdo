@@ -30,7 +30,7 @@ provider "azuread" {
 
 terraform {
   backend "azurerm" {
-    #resource_group_name  = "ajay-rg-import"
+    resource_group_name  = "ajay-rg-import"
     storage_account_name = "__terraformstorageaccount__"
     container_name       = "terraformcont"
     key                  = "landingzone.tfstate"
